@@ -1,0 +1,27 @@
+//A fibonacci recursive implementation. Input is iterations after initialization.
+program fib
+{
+declare v1,v2,v3;
+
+function fib0(in v11,in v22,in v33){
+    declare te;
+    {
+    v1:= v1-1;
+    //print(v1);
+    te:= v22 + v33;
+    print(te);
+    if (v1 > 0) then
+        te:=fib0(in v1,in v33,in te)
+    else return 0
+    }
+}
+
+{
+input(v1); //iterations after init
+v2:=1;
+v3:=1;
+print(v2);
+print(v3);
+v1:= fib0(in v1,in v2,in v3)
+}
+}

@@ -1,0 +1,46 @@
+// This program converts a positive decimal number input <1023 to a binary representation.
+// For input 2 it converts all numbers from input number <1023  until 0.
+// If input is >1023 the program does not work properly since the variable counter at line 20 gets multiplied above 32767
+// The print at line 25 can be uncommented for a pseudo-representation of the input for numbers > 1023.
+program main
+{
+declare a,counter,total;
+
+procedure dectobin(in v){
+    declare x,x1,c;
+    {
+    if (counter = 0) then
+        counter := 1;    //inititalize counter
+
+     x:=v/2;
+     x1:= v - 2*x;
+
+     total:=total + counter*x1;
+     c:=counter;
+     counter:=counter*10;
+
+     if (x>0) then
+        call dectobin(in x);
+
+     //print(x1);   // this is pseudo-representation of binary replaced by total
+
+     if (c = 1) then
+        {print (total); total:=0};
+
+     counter:=1
+    }
+}
+	
+{//main
+
+input(a);
+call dectobin(in a);
+
+input(a);
+while(a>0){
+    print(a);
+    call dectobin(in a);
+    a:=a-1
+    }
+}
+}

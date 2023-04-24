@@ -1,0 +1,28 @@
+// This program converts a positive decimal number input to a binary representation.
+// For input 2 it converts all numbers from input number until 0.
+program main
+{
+declare a;
+
+procedure dectobin(in v){
+    declare x,x1;
+    {
+     x:=v/2;
+     x1:= v - 2*x;
+     if (x>0) then
+        call dectobin(in x);
+     print(x1)
+    }
+}
+	
+{//main
+input(a);
+call dectobin(in a);
+input(a);
+while(a>0){
+    print(a);
+    call dectobin(in a);
+    a:=a-1
+    }
+}
+}

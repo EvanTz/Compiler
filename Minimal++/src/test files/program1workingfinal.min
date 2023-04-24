@@ -1,0 +1,67 @@
+
+//This program checks various function and procedure calls,
+//as well as input and print statements(explanation in the end)
+
+program testpWorking
+{
+declare var1,var2,var3;
+
+
+function foo(in x){
+    {x := x+1;
+    if (x>10) then print(-x+100) else print(x-100);
+    return x+10
+    }
+}
+
+procedure pro1(){
+    {
+        var3:= var2;
+        print(var3);
+        print(var2)
+    }
+}
+
+
+function f2(in a,inout b){
+    declare y;
+    function encap(){      //encapsulated function
+        {
+        var1:=10;
+        return var1
+        }
+    }
+    {
+    y:=5*a-20;
+    if (y>0) then print(2*b) else return 5*b;
+    y:=encap();
+    y :=y+b+foo(in b);
+    return y
+    }
+}
+
+
+//main statements
+{
+input(var1); //user input
+var2:=foo(in var1);
+call pro1();
+var1:= f2(in var2,inout var3);
+print(var1)
+}
+/*
+var1 is user input.
+Print explanation:
+    1.The first print occurs in function foo in line 11, called from line 46
+        "if (x>10) then print(-x+100) else print(x-100);" where x = var1 + 1
+    2.The next two prints occur in procedure pro1 in line 20 and 21, called from line 47
+        "print(var3);print(var2)" ,the same number(var1+11 (returned from previous foo call))
+        should be printed because var3=var2 in line 18
+    3.The next print occurs in function f2 in line 35, called from line 48 , if y:=5*a-20 > 0 where a is the first
+        formal parameter in f2
+    4.The next print occurs in function foo in line 11, called from line 37 inside f2
+        "if (x>10) then print(-x+100) else print(x-100);" where x = b + 1
+    5. The final print occurs in line 49 and it prints var1,
+        which should be  y :=y+b+foo(in b) from the call in line 48
+*/
+}

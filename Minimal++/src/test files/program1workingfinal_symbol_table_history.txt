@@ -1,0 +1,41 @@
+Symbol table history:
+
+
+Current nesting level: 1
+Current symbol table before scope delete:
+Scope #1: [['x', 1, 12], ['T_1', 16], ['T_2', 20], ['T_3', 24], ['T_4', 28], ['T_5', 32]]
+
+Scope #0: [['var1', 12], ['var2', 16], ['var3', 20], ['foo', 1, 101, [1], -1]]
+
+
+
+Current nesting level: 1
+Current symbol table before scope delete:
+Scope #1: []
+
+Scope #0: [['var1', 12], ['var2', 16], ['var3', 20], ['foo', 1, 101, [1], 36], ['pro1', 2, 115, [], -1]]
+
+
+
+Current nesting level: 2
+Current symbol table before scope delete:
+Scope #2: []
+
+Scope #1: [['a', 1, 12], ['b', 2, 16], ['y', 20], ['encap', 1, 120, [], -1]]
+
+Scope #0: [['var1', 12], ['var2', 16], ['var3', 20], ['foo', 1, 101, [1], 36], ['pro1', 2, 115, [], 12], ['f2', 1, -1, [1, 2], -1]]
+
+
+
+Current nesting level: 1
+Current symbol table before scope delete:
+Scope #1: [['a', 1, 12], ['b', 2, 16], ['y', 20], ['encap', 1, 120, [], 12], ['T_6', 24], ['T_7', 28], ['T_8', 32], ['T_9', 36], ['T_10', 40], ['T_11', 44], ['T_12', 48], ['T_13', 52]]
+
+Scope #0: [['var1', 12], ['var2', 16], ['var3', 20], ['foo', 1, 101, [1], 36], ['pro1', 2, 115, [], 12], ['f2', 1, 124, [1, 2], -1]]
+
+
+
+Current nesting level: 0
+Final/main symbol table: [[['var1', 12], ['var2', 16], ['var3', 20], ['foo', 1, 101, [1], 36], ['pro1', 2, 115, [], 12], ['f2', 1, 124, [1, 2], 56], ['T_14', 24], ['T_15', 28]]]
+
+Final offset of program: 32

@@ -1,0 +1,17 @@
+100: begin_block,f,_,_
+101: +,a,1,T_1
+102: :=,T_1,_,b
+103: :=,4,_,c
+104: retv,b,_,_
+105: end_block,f,_,_
+106: begin_block,main,_,_
+107: :=,1,_,a
+108: par,a,CV,_
+109: par,b,REF,_
+110: par,T_2,RET,_
+111: call,f,_,_
+112: :=,T_2,_,c
+113: out,c,_,_
+114: out,b,_,_
+115: halt,_,_,_
+116: end_block,main,_,_

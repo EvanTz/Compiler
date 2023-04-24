@@ -1,0 +1,25 @@
+Symbol table history:
+
+
+Current nesting level: 2
+Current symbol table before scope delete:
+Scope #2: []
+
+Scope #1: [['a', 1, 12], ['b', 2, 16], ['f2', 2, 101, [], -1]]
+
+Scope #0: [['a', 12], ['A', 16], ['B', 20], ['f1', 2, -1, [1, 2], -1]]
+
+
+
+Current nesting level: 1
+Current symbol table before scope delete:
+Scope #1: [['a', 1, 12], ['b', 2, 16], ['f2', 2, 101, [], 12]]
+
+Scope #0: [['a', 12], ['A', 16], ['B', 20], ['f1', 2, 105, [1, 2], -1]]
+
+
+
+Current nesting level: 0
+Final/main symbol table: [[['a', 12], ['A', 16], ['B', 20], ['f1', 2, 105, [1, 2], 20]]]
+
+Final offset of program: 24

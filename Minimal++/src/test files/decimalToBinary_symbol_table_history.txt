@@ -1,0 +1,15 @@
+Symbol table history:
+
+
+Current nesting level: 1
+Current symbol table before scope delete:
+Scope #1: [['v', 1, 12], ['x', 16], ['x1', 20], ['c', 24], ['T_1', 28], ['T_2', 32], ['T_3', 36], ['T_4', 40], ['T_5', 44], ['T_6', 48]]
+
+Scope #0: [['a', 12], ['counter', 16], ['total', 20], ['dectobin', 2, 101, [1], -1]]
+
+
+
+Current nesting level: 0
+Final/main symbol table: [[['a', 12], ['counter', 16], ['total', 20], ['dectobin', 2, 101, [1], 52], ['T_7', 24]]]
+
+Final offset of program: 28

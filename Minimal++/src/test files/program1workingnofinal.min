@@ -1,0 +1,57 @@
+
+//comments example
+//*******THIS PROGRAM EXISTS ONLY TO TEST UP TO SYMBOL TABLE, IT DOES NOT WORK WITH FINAL CODE********
+program testpWorking
+{
+declare var1,var2,var3;
+declare vrs,va,w,re,re2,vb,bv,x,s1,s2,s3,te,rer,yrt;
+
+function foo(in a, inout b, in c , in d, inout e){
+    {a := a+22;
+    if (a > 23 and b >= 23 or not[c<2]) then e := 232 else e := -1;
+    return e+var1
+    }
+}
+
+procedure pro1(inout pv, in pv2){
+    {print((-pv)/4-2+34*(-var2)+pv2)}
+}
+
+function f2(in x, in qw){
+    declare a, b, c;
+    function encap(in a, inout b, in d, in e){      //encapsulated function
+        return a*b*vrs
+    }
+    {
+    while (9*x =3) {print(qw); x := 2};
+
+    var3 := f2(in a, in c)+x;            //recursion
+    call pro1(inout a, in qw);
+    return encap(in x, inout var3, in qw, in w)      //call of encapsulated function
+    }
+}
+
+{vrs := 45;
+
+if (vrs > 23) then va := 232 + foo(in var1, inout var2, in var3 , in vrs, inout va) else print (w);
+
+while ( f2(in var1, in var2) >((-w)*2) or re<re2 and not[vb = bv]) print(vrs);
+
+forcase
+    when(9*(-x) =3): print(s1)
+    when((-var1)*(-x) = 8467): print(s2)
+    default: print(s3);
+
+forcase default: print (0);
+
+call pro1(inout x, in bv);
+
+print(te-4+foo(in var1, inout var2, in var3, in vrs, inout va));
+
+print(rer+2);
+
+input (yrt)
+
+}
+
+}

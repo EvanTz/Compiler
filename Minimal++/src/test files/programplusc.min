@@ -1,0 +1,35 @@
+/*
+This program's intermediate code runs as expected ported to c language.
+There are no functions or procedures to make this work.
+This program checks validity of statements : "input", "while", "print", "forcace", "if". All are successful.
+Boolean conditions and expressions work as expected.
+*/
+//The program runs in mips mars as expected.
+
+program c1compatible
+{
+declare var1,var2,var3;
+declare var4;
+
+{
+input(var1);
+input(var2);
+while(var1<var2)
+    {
+    if (var1 < 2 and var2 > 4) then print(-32767) else print(32767);
+    var3:=var1+var2;
+    print(var3);
+    var1 := 1 + var2
+    };
+print(var3);
+forcase
+    when (var3 > 1): {print (var3); var3:= var3-1}
+    when (var3 = 1): {print (var3+var1+var2); var3:= var3-1}
+    default: {var3:= var3-10;print(var3)};
+
+
+input (var4);
+if (var4 <= var3 or var4>6) then {print(-var4);var4 := -var4}
+else print(var4)
+}
+}

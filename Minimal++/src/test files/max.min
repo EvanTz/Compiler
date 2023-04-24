@@ -1,0 +1,25 @@
+program maxmain
+{
+declare a,b,c,d,e;
+declare max1,max2;
+
+function max(in x,in y){
+    if (x>y) then
+        return(x)
+    else
+        return(y)
+}
+
+{
+// e := max(in max(in a, in b), in max(in c, in d)) // doesnt work this way!!!
+// instead:
+input(a);            //added
+input(b);            //added
+max1 := max(in a, in b);
+input(c);            //added
+input(d);            //added
+max2 := max(in c, in d);
+e := max(in max1, in max2);
+print(e)             //added
+}
+}
